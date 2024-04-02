@@ -1,13 +1,13 @@
 # virustotal Script that automates the scanning of files
 This script scans files for malware using VirusTotal. It calculates file hashes, uploads them for analysis, retrieves results, and prints them. It offers real-time feedback during uploads and handles errors. Here's a brief overview of what the script does:
 
-File Scanning: The script recursively scans all files in the current directory and its subdirectories (excluding .txt files) using the VirusTotal API.
+1. File Scanning: The script recursively scans all files in the current directory and its subdirectories (excluding .txt files) using the VirusTotal API.
 Hash Calculation: For each file, the script calculates the SHA256 hash, which serves as a unique identifier for the file.
-File Upload: If the file is not found in the VirusTotal database (identified by its hash), the script uploads the file to VirusTotal for analysis.
-Analysis Retrieval: The script waits for the analysis to complete and retrieves the detection results from VirusTotal.
-Result Output: The script prints the detection results to the console and writes them to a text file. The output includes the file name, a link to the detection results on VirusTotal, the SHA256 hash, and the detection details provided by antivirus engines.
-Real-time Feedback: During file upload, the script provides real-time feedback on the progress, informing the user that the file is being uploaded to VirusTotal.
-Error Handling: The script handles errors such as rate limiting, authentication failures, and unexpected HTTP responses from the VirusTotal API.
+2. File Upload: If the file is not found in the VirusTotal database (identified by its hash), the script uploads the file to VirusTotal for analysis.
+3. Analysis Retrieval: The script waits for the analysis to complete and retrieves the detection results from VirusTotal.
+4. Result Output: The script prints the detection results to the console and writes them to a text file. The output includes the file name, a link to the detection results on VirusTotal, the SHA256 hash, and the detection details provided by antivirus engines.
+5. Real-time Feedback: During file upload, the script provides real-time feedback on the progress, informing the user that the file is being uploaded to VirusTotal.
+6. Error Handling: The script handles errors such as rate limiting, authentication failures, and unexpected HTTP responses from the VirusTotal API.
 
 Overall, this script provides a convenient way to analyze multiple files for potential threats using the VirusTotal service and generates a detailed report of the findings.
 
